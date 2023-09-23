@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPILT - About us</title>
+    <link rel="shortcut icon" type="image" href="port.png">
+    <link rel="stylesheet" href="about.css"> 
+</head>
+<body>
+   <div class="wrapper">
+     
+        <div class="navbar">
+            <img src="port.png" class="logo" >
+            <ul>
+                <li><a href="minato.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a class="active" href="#">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>    
+            </ul>
+        </div>
+ 
+        <div class="container">
+          <div class ="img"></div>
+            <h1>ABOUT US..</h1>    
+                <p>Hariprasath, Ganesan, Selvamani, Gayathri created Waste management webpage to resolve the primary difficulty faced by the society as disposing the waste from the surrounding.<br><br>
+                   Nowadays, it's a big deal to dispose the waste from our home. It's not possible to reach every nooks and corners for the corporation people.<br><br>
+                   That's why we 4 created this webpage to resolve this issue. By using this webpage, you can easily dispose the waste from your home. You can update the amount of waste in your home on this webpage and as soon as possible our services will reach your home.<br><br>
+             The next goal of our team is to make the use of the waste. Many people are creating more useful things using the wastes like cement, brick, and so on. But they couldn't get the sufficient waste to do such things. So our team will help those people by selling the waste to them.<br><br>
+                   By using this website, they can easily find the waste to make such things in short span of time. They can update the required amount of waste to make such things, in this website and as soon as possible it will reach them.          </p>
+                   <a href="javascript:void();" class="readmore-btn"><span></span>READ MORE</a>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".readmore-btn").on('click', function(){
+            $(this).parent().toggleClass("showContent");
+
+            var replaceText = $(this).parent().hasClass("showContent") ? "READ LESS" : "READ MORE";
+            $(this).text(replaceText);
+        });
+    </script>
+</body>
+</html>
